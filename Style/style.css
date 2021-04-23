@@ -141,10 +141,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -160,48 +156,146 @@ section .sedans {
   width: 300px;
   height: 600px;
   background-color: #eeb77c;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  border-radius: 10px 0px 0px 10px;
 }
 
 section .sedans .h1-sedans {
   font-family: "Lexend Deca", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
+  padding-left: 15%;
+  letter-spacing: -0.05em;
 }
 
-section .sedans .img-sedans {
-  align: center;
+section .sedans img {
+  width: 64px;
+  padding-left: 15%;
+}
+
+section .sedans .more-info {
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  color: #eeb77c;
+  font-size: 15px;
+  padding: 15px 35px;
+  font-weight: bold;
 }
 
 section .suvs {
   width: 300px;
   height: 600px;
   background-color: #008b8b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 section .suvs .h1-suvs {
   font-family: "Lexend Deca", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 35px;
+  padding-left: 15%;
+  letter-spacing: -0.05em;
+}
+
+section .suvs .img-suvs {
+  width: 64px;
+  padding-left: 15%;
+}
+
+section .suvs .more-info {
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  color: #008b8b;
+  font-size: 15px;
+  padding: 15px 35px;
+  font-weight: bold;
 }
 
 section .luxury {
   width: 300px;
   height: 600px;
-  background-color: #111d1d;
+  background-color: #004241;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 0px 10px 10px 0px;
 }
 
 section .luxury .h1-luxury {
   font-family: "Lexend Deca", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 35px;
+  padding-left: 15%;
+  letter-spacing: -0.05em;
+}
+
+section .luxury .img-luxury {
+  width: 64px;
+  padding-left: 15%;
+}
+
+section .luxury .simple-text {
+  padding-right: 7%;
+}
+
+section .luxury .more-info {
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  color: #004241;
+  font-size: 15px;
+  padding: 15px 35px;
+  font-weight: bold;
+}
+
+section .simple-text {
+  padding-left: 15%;
+}
+
+section .more-info {
+  margin-left: 15%;
 }
 /*# sourceMappingURL=style.css.map */

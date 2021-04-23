@@ -136,7 +136,6 @@ section {
   width: 900px;
   height: 600px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -147,19 +146,36 @@ section {
     width: 300px;
     height: 600px;
     background-color: #eeb77c;
-    display: grid;
-
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     justify-content: space-evenly;
+    border-radius: 10px 0px 0px 10px;
+
     .h1-sedans {
       font-family: "Lexend Deca", sans-serif;
       color: #fff;
       text-transform: uppercase;
-      font-size: 25px;
+      font-size: 35px;
       text-align: center;
+      padding-left: 15%;
+      letter-spacing: -0.05em;
     }
 
-    .img-sedans {
-      align: center;
+    img {
+      width: 64px;
+      padding-left: 15%;
+    }
+
+    .more-info {
+      cursor: pointer;
+      border-radius: 50px;
+      border: none;
+      background-color: #fff;
+      color: #eeb77c;
+      font-size: 15px;
+      padding: 15px 35px;
+      font-weight: bold;
     }
   }
 
@@ -167,27 +183,77 @@ section {
     width: 300px;
     height: 600px;
     background-color: #008b8b;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+
     .h1-suvs {
       font-family: "Lexend Deca", sans-serif;
       color: #fff;
       text-transform: uppercase;
-      font-size: 25px;
+      font-size: 35px;
+      padding-left: 15%;
+      letter-spacing: -0.05em;
     }
     .img-suvs {
+      width: 64px;
+      padding-left: 15%;
+    }
+
+    .more-info {
+      cursor: pointer;
+      border-radius: 50px;
+      border: none;
+      background-color: #fff;
+      color: #008b8b;
+      font-size: 15px;
+      padding: 15px 35px;
+      font-weight: bold;
     }
   }
 
   .luxury {
     width: 300px;
     height: 600px;
-    background-color: #111d1d;
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+    border-radius: 0px 10px 10px 0px;
+
     .h1-luxury {
       font-family: "Lexend Deca", sans-serif;
       color: #fff;
       text-transform: uppercase;
-      font-size: 25px;
+      font-size: 35px;
+      padding-left: 15%;
+      letter-spacing: -0.05em;
     }
+
     .img-luxury {
+      width: 64px;
+      padding-left: 15%;
     }
+    .simple-text {
+      padding-right: 7%;
+    }
+    .more-info {
+      cursor: pointer;
+      border-radius: 50px;
+      border: none;
+      background-color: #fff;
+      color: hsl(179, 100%, 13%);
+      font-size: 15px;
+      padding: 15px 35px;
+      font-weight: bold;
+    }
+  }
+  .simple-text {
+    padding-left: 15%;
+  }
+  .more-info {
+    margin-left: 15%;
   }
 }
